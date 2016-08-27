@@ -28,4 +28,6 @@ urlpatterns = [
     url(r'^danger-zones$', views.dangerzones, name='dangerzones'),
     url(r'^new-user$', views.newuser, name="newuser"),
     url(r'^login$', views.login, name="login"),
+    url(r'^add-event$', views.addevent, name="addevent"),
+    url(r'^controlcenter$', views.controlcenter, name="controlcenter"),
 ]

@@ -25,3 +25,9 @@ def newuser(request):
 
 def login(request):
     return render(request, "login.html")
+
+def addevent(request):
+    return render(request, "add-event.html")
+
+def controlcenter(request):
+    return render(request, "controlcenter.html")
