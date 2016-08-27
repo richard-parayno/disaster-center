@@ -1,7 +1,13 @@
 #space {
-  padding: 100px;
+  padding: 60px;
 }
 
 #moduleHeader {
   text-size: 72px;
+}
+
+.regContainer {
+  display: flex;
+
+
 }
