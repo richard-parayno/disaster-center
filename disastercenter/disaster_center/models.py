@@ -10,6 +10,7 @@ class UserProfile(models.Model):
     first_name = models.CharField(max_length=30,default="default")  
     last_name = models.CharField(max_length=30,default="default")  
     exp = models.IntegerField(default=0)
+    points = models.IntegerField(default=0)
 
 
 
