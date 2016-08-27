@@ -8,6 +8,14 @@ a {
   color: inherit;
 }
 
+li > a {
+  color: CFCFCF;
+}
+
+.container {
+  padding-top: 20px;
+}
+
 #maintext {
   height: 100%;
   text-align: center;
