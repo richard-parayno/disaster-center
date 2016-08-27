@@ -21,6 +21,7 @@ a {
   margin-top: 25px;
   background-color: 3498DB;
   font-size: 20px;
+  box-shadow: 10px 10px 38px -6px rgba(0,0,0,0.24);
 }
 
 .navbar {
@@ -30,4 +31,9 @@ a {
   background-color: 3498DB;
   text-align: center;
   font-size: 17px;;
+}
+
+.centered {
+  float: none;
+  margin: 0 auto;
 }
