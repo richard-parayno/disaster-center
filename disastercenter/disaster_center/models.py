@@ -1,13 +1,16 @@
 from django.db import models
 from django.contrib.auth.models import User
+import datetime
 
 
 class UserProfile(models.Model):  
+
     user = models.OneToOneField(User)  
     email = models.CharField(max_length=30,default="default@gmail.com")  
     first_name = models.CharField(max_length=30,default="default")  
     last_name = models.CharField(max_length=30,default="default")  
     exp = models.IntegerField(default=0)
+    points = models.IntegerField(default=0)
 
 
 
@@ -19,8 +22,8 @@ class Report(models.Model):
 	reportType = models.CharField(max_length=30)
 	latitude = models.FloatField()
 	longitude = models.FloatField()
-	dateTimeStart = models.DateField().auto_now
-	dateTimeEnd = models.DateField(default="00/00/00").auto_now
+	dateTimeStart = models.DateTimeField(null=True)
+	dateTimeEnd = models.DateTimeField(null=True, blank=True)
 
 
 
