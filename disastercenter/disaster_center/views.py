@@ -22,3 +22,6 @@ def dangerzones(request):
 
 def newuser(request):
     return render(request, "new-user.html")
+
+def login(request):
+    return render(request, "login.html")
