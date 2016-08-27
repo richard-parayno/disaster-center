@@ -3,23 +3,23 @@ from django.contrib.auth.models import User
 import datetime
 
 
-class UserProfile(models.Model):  
+class UserProfile(models.Model):
 
-    user = models.CharField(max_length=15, default="default")  
-    password=models.CharField(max_length=15, default="p@ssword")  
-    email = models.CharField(max_length=30,default="default@gmail.com")  
-    first_name = models.CharField(max_length=30,default="default")  
-    last_name = models.CharField(max_length=30,default="default")  
+    user = models.CharField(max_length=15, default="default")
+    password=models.CharField(max_length=15, default="p@ssword")
+    email = models.CharField(max_length=30,default="default@gmail.com")
+    first_name = models.CharField(max_length=30,default="default")
+    last_name = models.CharField(max_length=30,default="default")
     exp = models.IntegerField(default=0)
     points = models.IntegerField(default=0)
 
 
 
-    def __str__(self):  
-          return "%s's profile" % self.user 
+    def __str__(self):
+          return "%s's profile" % self.user
 
 class Report(models.Model):
-	types= (
+	types = (
         ('Flood','Flood'),
         ('Traffic','Traffic'),
         ('LandSlide','LandSlide'),
@@ -55,7 +55,3 @@ class ClaimedPrize(models.Model):
 	prize = models.ForeignKey(Prize,on_delete=models.CASCADE)
 	def __str__(self):
 		return 'User: {} {}'.format(self.user.last_name, self.user.first_name)
-
-
-
-
