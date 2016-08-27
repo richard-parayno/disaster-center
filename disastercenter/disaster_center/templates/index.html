@@ -10,7 +10,28 @@
   </head>
   <body>
 
-    
+    <!-- navbar -->
+    <div id="navbar" class="container-fluid">
+      <div class="navbar-header">
+      </div>
+      <div class="navbar">
+        <ul class="nav navbar-nav">
+          <li><a href="{% url 'floods' %}">Floods</a></li>
+          <li><a href="{% url 'storms' %}">Storms</a></li>
+          <li><a href="{% url 'updates' %}">Updates</a></li>
+          <li><a href="{% url 'traffic' %}">Traffic</a></li>
+          <li><a href="{% url 'dangerzones' %}">Danger Zones</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- main text -->
+    <div id="maintext" class="row">
+      <div class="col-md-6 col-md-3-offset">
+        <h1 style="font-size: 70px; font-weight: bold;"> Disaster Center </h1>
+        <p style="font-size: 36px; font-weight: lighter; font-style: italic;"> We're here to help. </p>
+      <div>
+    </div>
 
 
   </body>

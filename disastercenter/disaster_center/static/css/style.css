@@ -1,0 +1,29 @@
+body {
+  font-family: "Helvetica Neue";
+  background-color: 2C3E50;
+  color: CFCFCF;
+}
+
+a {
+  color: inherit;
+}
+
+#maintext {
+  text-align: center;
+}
+
+#navbar {
+  background-color: 3498DB;
+
+}
+
+.navbar .nav {
+  display: inline-block;
+  float: none;
+
+}
+
+.navbar {
+  text-align: center;
+  margin-top: 15px;
+}
