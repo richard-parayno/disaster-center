@@ -9,21 +9,25 @@ a {
 }
 
 #maintext {
+  height: 100%;
   text-align: center;
 }
 
-#navbar {
-  background-color: 3498DB;
-
+#space {
+  padding: 170px;
 }
 
-.navbar .nav {
-  display: inline-block;
-  float: none;
-
+#enterSite {
+  margin-top: 25px;
+  background-color: 3498DB;
+  font-size: 20px;
 }
 
 .navbar {
+  display: inline-block;
+  border: none;
+  box-shadow: none;
+  background-color: 3498DB;
   text-align: center;
-  margin-top: 15px;
+  font-size: 17px;;
 }
