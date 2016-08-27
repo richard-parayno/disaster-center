@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-
+admin.autodiscover()
 import disaster_center.views as views
 
 urlpatterns = [
