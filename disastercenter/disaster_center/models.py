@@ -5,9 +5,8 @@ import datetime
 
 class UserProfile(models.Model):
 
-    user = models.CharField(max_length=15, default="default")
-    password=models.CharField(max_length=15, default="p@ssword")
     email = models.CharField(max_length=30,default="default@gmail.com")
+    password=models.CharField(max_length=15, default="p@ssword")
     first_name = models.CharField(max_length=30,default="default")
     last_name = models.CharField(max_length=30,default="default")
     exp = models.IntegerField(default=0)
@@ -16,7 +15,7 @@ class UserProfile(models.Model):
 
 
     def __str__(self):
-          return "%s's profile" % self.user
+          return "%s's profile" % self.email
 
 class Report(models.Model):
 	types = (
