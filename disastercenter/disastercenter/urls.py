@@ -16,9 +16,14 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-import disaster_center.views
+import disaster_center.views as views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.index, name='index')
+    url(r'^$', views.index, name='index'),
+    url(r'^floods$', views.floods, name='floods'),
+    url(r'^storms$', views.storms, name='storms'),
+    url(r'^updates$', views.updates, name='updates'),
+    url(r'^traffic$', views.traffic, name='traffic'),
+    url(r'^danger-zones$', views.dangerzones, name='dangerzones'),
 ]
