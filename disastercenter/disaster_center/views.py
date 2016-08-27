@@ -19,3 +19,6 @@ def traffic(request):
 
 def dangerzones(request):
     return render(request, "danger-zones.html")
+
+def newuser(request):
+    return render(request, "new-user.html")

@@ -26,4 +26,5 @@ urlpatterns = [
     url(r'^updates$', views.updates, name='updates'),
     url(r'^traffic$', views.traffic, name='traffic'),
     url(r'^danger-zones$', views.dangerzones, name='dangerzones'),
+    url(r'^new-user$', views.newuser, name="newuser"),
 ]
