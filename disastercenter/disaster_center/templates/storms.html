@@ -43,11 +43,43 @@
       </div>
     </div>
 
+    <div class="row">
+      <div class="col-md-6 col-md-offset-6">
+        <div id="map"></div>
+      </div>
+    </div>
+
 
 
   </body>
 
 
+  <!-- initMap func -->
+  <script>
+      function initMap() {
+        // code provided by google api
+        // Gets latitude and longitude
+        var myLatLng = {lat: -25.363, lng: 131.044};
+
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: myLatLng,
+          scrollwheel: false,
+          zoom: 3
+        });
+
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng,
+          title: 'Theres an event here'
+        });
+      }
+  </script>
+  <!-- maps -->
+  <script  async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7NHG-6cuFR7a2sVC94UYkf__0s6zpXbs&callback=initMap">
+  </script>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
