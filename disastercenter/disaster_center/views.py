@@ -9,15 +9,12 @@ from django.contrib.auth.models import User
 def index(request):
     return render(request, "index.html")
 
-
 def floods(request):
     return render(request, "floods.html")
 
 def storms(request):
     return render(request, "storms.html")
 
-def updates(request):
-    return render(request, "updates.html")
 
 def traffic(request):
     return render(request, "traffic.html")

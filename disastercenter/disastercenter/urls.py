@@ -23,7 +23,6 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^floods$', views.floods, name='floods'),
     url(r'^storms$', views.storms, name='storms'),
-    url(r'^updates$', views.updates, name='updates'),
     url(r'^traffic$', views.traffic, name='traffic'),
     url(r'^danger-zones$', views.dangerzones, name='dangerzones'),
     url(r'^new-user$', views.newuser, name="newuser"),
