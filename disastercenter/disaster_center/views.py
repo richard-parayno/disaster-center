@@ -31,6 +31,12 @@ def newuser(request):
 def login(request):
     return render(request, "login.html")
 
+def addevent(request):
+    return render(request, "add-event.html")
+
+def controlcenter(request):
+    return render(request, "controlcenter.html")
+
 def new_user_account(request):
     if request.method == "POST":
         email = request.POST['email']
@@ -60,9 +66,3 @@ def login_account(request):
 def logout_account(request):
     logout(request, user)
     return redirect('index')
-
-def addevent(request):
-    return redirect("add-event.html")
-
-def controlcenter(request):
-    return redirect("control-center.html")
