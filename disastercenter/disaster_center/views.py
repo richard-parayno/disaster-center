@@ -23,7 +23,7 @@ def dangerzones(request):
     return render(request, "danger-zones.html")
 
 def newuser(request):
-    return render(request, "newuser.html")
+    return render(request, "new-user.html")
 
 def login(request):
     return render(request, "login.html")
