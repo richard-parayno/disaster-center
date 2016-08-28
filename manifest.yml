@@ -1,6 +1,0 @@
----
-applications:
-- name: disaster_center
-  memory: 256M
-  command: sh run.sh
-  buildpack: https://www.github.com/cloudfoundry/python-buildpack
