@@ -62,9 +62,7 @@ def logout_account(request):
     return redirect('index')
 
 def addevent(request):
-    logout(request, user)
     return redirect("add-event.html")
 
 def controlcenter(request):
-    logout(request, user)
     return redirect("control-center.html")
