@@ -31,7 +31,8 @@ class Report(models.Model):
 	longitude = models.FloatField()
 	dateTimeStart = models.DateTimeField(null=True)
 	dateTimeEnd = models.DateTimeField(null=True, blank=True)
-
+	credibilityRating = models.FloatField(default='5')
+	numberOfRaters = models.IntegerField(default="0")
 
 
 	def __str__(self):
