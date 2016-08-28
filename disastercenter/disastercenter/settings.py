@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'disastercenter.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME':'DisasterCenter',
+        'NAME':'compose',
         'USER':'postgres',
         'PASSWORD':'root',
         'Host':'',
