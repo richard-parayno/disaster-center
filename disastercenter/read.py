@@ -16,7 +16,6 @@ for line in tweets_file:
 
 print (tweets_data)
 
-
 tweets = pd.DataFrame()
 
 tweets['text'] = map(lambda tweet: tweet['text'], tweets_data)
