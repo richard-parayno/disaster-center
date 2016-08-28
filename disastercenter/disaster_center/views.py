@@ -22,11 +22,11 @@ def updates(request):
 def traffic(request):
     return render(request, "traffic.html")
 
-def danger_zones(request):
+def dangerzones(request):
     return render(request, "danger-zones.html")
 
-def new_user(request):
-    return render(request, "new-user.html")
+def newuser(request):
+    return render(request, "newuser.html")
 
 def login(request):
     return render(request, "login.html")
@@ -52,7 +52,7 @@ def login_account(request):
         if user is not None:
             if user.is_active:
                 login(request, user)
-                return redirect('danger_zones')
+                return redirect('dangerzones')
 
     else:
         return render(request, 'index')
@@ -60,3 +60,11 @@ def login_account(request):
 def logout_account(request):
     logout(request, user)
     return redirect('index')
+
+def addevent(request):
+    logout(request, user)
+    return redirect("add-event.html")
+
+def controlcenter(request):
+    logout(request, user)
+    return redirect("control-center.html")
