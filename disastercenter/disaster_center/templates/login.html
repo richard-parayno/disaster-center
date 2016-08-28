@@ -48,7 +48,8 @@
     <!-- email, password-->
     <div class="regContainer col-md-6 col-md-offset-3">
       <center>
-        <form class="form-horizontal">
+        <form class="form-horizontal" method = "POST" action = "/controlcenter/">
+          {% csrf_token %}
             <label class="control-label col-md-2"> Email: </label>
             <div class="form-group col-md-10">
               <input type="text" class="form-control" name="email">
@@ -59,7 +60,7 @@
               <input type="password" class="form-control" name="password">
             </div>
             <input type="submit" class="btn">
-        </form>
+        </form method = "POST" action = "/newuser/">
         <a class="registerhere" href="{% url 'newuser' %}"> Don't have an account yet? Register here. </a>
       </center>
     </div>
